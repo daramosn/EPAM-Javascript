@@ -45,10 +45,24 @@
 
 .video-section {
     height: 822px;
-    padding: 6rem;
     background: url(../assets/background_2.png) no-repeat center center;
     background-size: cover;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.video-section .overlay {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #8C4F2A4D;
+    z-index: 1;
+}
+
+.video-section div:nth-of-type(2) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2 !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,4 +85,14 @@
     margin: 0;
     color: white;
     font-size: 48px;
+}
+
+@media (max-width: 768px) {
+    .description-section {
+        padding-inline: 2rem;
+    }
+
+    .description-section div {
+        grid-template-columns: 1fr;
+    }
 }

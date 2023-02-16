@@ -10,7 +10,6 @@
     flex-direction: column;
 }
 
-
 nav {
     padding: 1rem 10rem;
     display: grid;
@@ -31,7 +30,23 @@ nav ul {
     grid-column: 2/4;
     display: flex;
     justify-content: space-around;
+    gap: 0.5rem;
     flex-wrap: wrap;
+}
+
+.hamburger-button {
+    padding-inline: auto;
+    grid-column: 4/5;
+    display: none;
+}
+
+.bar {
+    margin: 0.3rem;
+    margin-left: auto;
+    gap: 0.3rem;
+    width: 30px;
+    height: 3px;
+    background-color: white;
 }
 
 nav a,
@@ -39,6 +54,10 @@ nav li {
     text-decoration: none;
     list-style-type: none;
     color: white;
+}
+
+nav li:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -62,4 +81,22 @@ header h3 {
 
 header img {
     margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+    .landing-page {
+        padding-inline: 1rem;
+    }
+
+    nav {
+        padding-inline: 1rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
 }
