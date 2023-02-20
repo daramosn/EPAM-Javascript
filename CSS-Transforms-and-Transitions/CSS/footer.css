@@ -45,6 +45,6 @@ footer>:nth-child(3) {
         display: grid;
         text-align: center;
         row-gap: 1rem;
-        padding: 1rem 2rem 3rem;
+        padding: 1rem auto 3rem;
     }
 }

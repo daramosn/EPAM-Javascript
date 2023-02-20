@@ -81,6 +81,11 @@ header h3 {
 
 header img {
     margin-inline: auto;
+    transition-duration: 700ms;
+}
+
+header img:hover {
+    transform: rotateY(180deg) scale(1.2);
 }
 
 @media (max-width: 768px) {

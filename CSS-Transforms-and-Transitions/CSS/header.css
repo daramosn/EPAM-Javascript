@@ -13,7 +13,7 @@
 nav {
     padding: 1rem 10rem;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     align-items: center;
     text-transform: uppercase;
@@ -27,7 +27,7 @@ nav>a {
 
 nav ul {
     letter-spacing: 0.1rem;
-    grid-column: 2/3;
+    grid-column: 2/4;
     display: flex;
     justify-content: space-around;
     gap: 0.5rem;
@@ -36,13 +36,14 @@ nav ul {
 
 .hamburger-button {
     padding-inline: auto;
-    grid-column: 3/4;
+    grid-column: 4/5;
     display: none;
 }
 
 .bar {
-    margin-bottom: 0.3rem;
+    margin: 0.3rem;
     margin-left: auto;
+    gap: 0.3rem;
     width: 30px;
     height: 3px;
     background-color: white;
