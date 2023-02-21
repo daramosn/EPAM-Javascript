@@ -136,6 +136,15 @@ main img:hover {
     .hamburger-button {
         display: block;
     }
+
+    .landing-page .bg-2 img {
+        animation: lightFade 3000ms ease-in-out infinite alternate both;
+    }
+
+    .landing-page .bg-3 img {
+        animation: lightMove 4000ms ease-in-out 3000ms infinite alternate both,
+            lightFade 6000ms ease-in-out infinite alternate both;
+    }
 }
 
 @keyframes lightFade {
